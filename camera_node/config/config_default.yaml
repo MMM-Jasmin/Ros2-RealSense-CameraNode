@@ -133,3 +133,38 @@ camera_right:
       # Value for automatic digital gain value
       auto_gain_limit: 16
 
+# Configuration for left camera node
+camera_top:
+  ros__parameters:
+    # Depth image topic for registration node
+    topic_depth: camera_top/depth/image
+    # Frameset topic for fusion node
+    topic_frameset: camera_top/frameset
+    # Verbose flag; Print additional information if true
+    verbose: true
+    # Use sensor data Quality of Service for messages
+    qos_sensor_data: true
+    # Message queue size
+    qos_history_depth: 5
+    # Minimum and maximum limit for depth values
+    #min_depth: 0.5
+    #max_depth: 2.0
+    # Depth scale for camera in meters; uint16 value * depth scale = distance
+    #depth_scale: 0.001 # D455
+    #depth_scale: 0.00025 # L515
+    # Align depth to color image
+    use_rs_align: true
+    # Camera serial number
+    #camera_serial_no: "806312060492"
+    #camera_serial_no: "141322250659"
+    #camera_serial_no: "843112073861"
+    camera_serial_no: "141322251466"
+    #camera_serial_no: "825312070323"
+    # Use camera frame timestamp; If false set timestamp to time of arrival
+    use_rs_timestamp: true
+    # Debug configuration
+    debug:
+      # Print debug information
+      enable_debug: true
+      # Print camera related debug information
+      enable_rs_debug: false

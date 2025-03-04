@@ -200,10 +200,11 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_eigen REQUIRED)
 find_package(ament_index_cpp REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
-find_package(pcl_conversions REQUIRED)
 find_package(image_transport REQUIRED)
 
 find_package(camera_interfaces REQUIRED)
+# old stuff not needed anymore
+#find_package(pcl_conversions REQUIRED)
 #find_package(pointcloud_processing REQUIRED)
 #include_directories(${pointcloud_processing_INCLUDE_DIR})
 #target_link_libraries(${PROJECT_BINARY} pointcloud_processing::pointcloud_processing)
@@ -236,10 +237,11 @@ ament_target_dependencies(
 	"tf2_eigen"
 	"ament_index_cpp"
 	"tf2_geometry_msgs"
-	"pcl_conversions"
 	"image_transport"
-
 	"camera_interfaces"
+	
+	# old stuff not needed anymore
+	#"pcl_conversions"
 	#"pointcloud_processing"
 )
 
@@ -253,10 +255,11 @@ ament_target_dependencies(
 	"tf2_eigen"
 	"ament_index_cpp"
 	"tf2_geometry_msgs"
-	"pcl_conversions"
 	"image_transport"
-
 	"camera_interfaces"
+
+	# old stuff not needed anymore
+	#"pcl_conversions"
 	#"pointcloud_processing"
 )
 
